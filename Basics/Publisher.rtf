@@ -1,0 +1,75 @@
+{\rtf1\ansi\ansicpg1251\cocoartf2513
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset0 HelveticaNeue-Medium;\f1\fnil\fcharset0 Charter-Roman;\f2\fnil\fcharset0 Menlo-Regular;
+}
+{\colortbl;\red255\green255\blue255;\red31\green31\blue31;\red255\green255\blue255;\red239\green239\blue239;
+}
+{\*\expandedcolortbl;;\cssrgb\c16078\c16078\c16078;\cssrgb\c100000\c100000\c100000;\cssrgb\c94902\c94902\c94902;
+}
+{\*\listtable{\list\listtemplateid1\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{none\}}{\leveltext\leveltemplateid1\'00;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid1}}
+{\*\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}}
+\paperw12240\paperh15840\margl1440\margr1440\vieww9000\viewh8400\viewkind0
+\deftab720
+\pard\pardeftab720\sl720\partightenfactor0
+
+\f0\fs60 \cf2 \cb3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 What\'92s the Publisher?\
+\pard\pardeftab720\sl640\partightenfactor0
+
+\f1\fs42 \cf2 It is protocol declares a type that can deliver a sequence of values over time. A publisher that has not had any subscription requests will not provide any data.\
+The subscriber\'92s\'a0
+\f2\fs31\fsmilli15750 \cb4 Input
+\f1\fs42 \cb3 \'a0and\'a0
+\f2\fs31\fsmilli15750 \cb4 Failure
+\f1\fs42 \cb3 \'a0associated types must match the\'a0
+\f2\fs31\fsmilli15750 \cb4 Output
+\f1\fs42 \cb3 \'a0and\'a0
+\f2\fs31\fsmilli15750 \cb4 Failure
+\f1\fs42 \cb3 \'a0types declared by the publisher. The publisher implements the\'a0
+\f2\fs31\fsmilli15750 \cb4 receive(subscriber:)
+\f1\fs42 \cb3 method to accept a subscriber.\
+The publisher can call the following methods on the subscriber:\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sl640\partightenfactor0
+\ls1\ilvl0
+\f2\fs31\fsmilli15750 \cf2 \cb4 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 		\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 receive(subscription:)
+\f1\fs42 \cb3 : Acknowledges the subscribe request and returns a\'a0
+\f2\fs31\fsmilli15750 \cb4 Subscription
+\f1\fs42 \cb3 \'a0instance. The subscriber uses the subscription to demand elements from the publisher and can use it to cancel publishing.\cb1 \
+\ls1\ilvl0
+\f2\fs31\fsmilli15750 \cb4 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 		\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 receive(_:)
+\f1\fs42 \cb3 : Delivers one element from the publisher to the subscriber.\cb1 \
+\ls1\ilvl0
+\f2\fs31\fsmilli15750 \cb4 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 		\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 receive(completion:)
+\f1\fs42 \cb3 : Informs the subscriber that publishing has ended, either normally or with an error.\cb1 \
+\ls1\ilvl0\kerning1\expnd0\expndtw0 \outl0\strokewidth0 		\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 \
+\ls1\ilvl0\kerning1\expnd0\expndtw0 \outl0\strokewidth0 		
+\f0\fs44 \cb3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Creating Your Own Publishers\
+\pard\pardeftab720\sl640\partightenfactor0
+\ls1\ilvl0
+\f1\fs42 \cf2 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 		\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 You can create your own publisher by using one of several types provided by the Combine framework:\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sl640\partightenfactor0
+\ls1\ilvl0\cf2 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 		\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Use a concrete subclass of\'a0
+\f2\fs31\fsmilli15750 \cb4 Subject
+\f1\fs42 \cb3 , such as\'a0
+\f2\fs31\fsmilli15750 \cb4 PassthroughSubject
+\f1\fs42 \cb3 \'a0to publish values on-demand by calling its\'a0
+\f2\fs31\fsmilli15750 \cb4 send(_:)
+\f1\fs42 \cb3 \'a0method.\cb1 \
+\ls1\ilvl0\cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 		\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Use a\'a0
+\f2\fs31\fsmilli15750 \cb4 CurrentValueSubject
+\f1\fs42 \cb3 \'a0to publish whenever you update the subject\'92s underlying value.\cb1 \
+\ls1\ilvl0\cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 		\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Add the\'a0
+\f2\fs31\fsmilli15750 \cb4 @Published
+\f1\fs42 \cb3 \'a0annotation to a property of one of your own types. In doing so, the property gains a publisher that emits an event whenever the property\'92s value changes.\cb1 \
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sl640\partightenfactor0
+\ls1\ilvl0\cf2 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 		\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 \
+}

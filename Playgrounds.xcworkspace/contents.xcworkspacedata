@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <Group
+      location = "container:"
+      name = "Basics">
+      <FileRef
+         location = "group:Basics/Combine.rtf">
+      </FileRef>
+      <FileRef
+         location = "group:Basics/Operators.rtf">
+      </FileRef>
+      <FileRef
+         location = "group:Basics/Publisher.rtf">
+      </FileRef>
+      <FileRef
+         location = "group:Basics/Subjects.rtf">
+      </FileRef>
+      <FileRef
+         location = "group:Basics/Subscriber.rtf">
+      </FileRef>
+   </Group>
+   <Group
+      location = "group:Publishers"
+      name = "Publishers">
+      <FileRef
+         location = "group:Just.playground">
+      </FileRef>
+      <FileRef
+         location = "group:Fail.playground">
+      </FileRef>
+      <FileRef
+         location = "group:Future.playground">
+      </FileRef>
+      <FileRef
+         location = "group:Empty.playground">
+      </FileRef>
+      <FileRef
+         location = "group:Deferred.playground">
+      </FileRef>
+      <FileRef
+         location = "group:ConnectablePublisher.playground">
+      </FileRef>
+   </Group>
+   <Group
+      location = "container:"
+      name = "Subjects">
+      <FileRef
+         location = "group:Subjects/PassthroughSubject.playground">
+      </FileRef>
+      <FileRef
+         location = "group:Subjects/CurrentValueSubject.playground">
+      </FileRef>
+   </Group>
+   <Group
+      location = "group:Operators"
+      name = "Operators">
+      <FileRef
+         location = "group:AllSatisfy.playground">
+      </FileRef>
+      <FileRef
+         location = "group:Buffer.playground">
+      </FileRef>
+      <FileRef
+         location = "group:Catch.playground">
+      </FileRef>
+      <FileRef
+         location = "group:Collect.playground">
+      </FileRef>
+      <FileRef
+         location = "group:CollectByTime.playground">
+      </FileRef>
+      <FileRef
+         location = "group:CombineLatest.playground">
+      </FileRef>
+      <FileRef
+         location = "group:CompactMap.playground">
+      </FileRef>
+      <FileRef
+         location = "group:Comparison.playground">
+      </FileRef>
+      <FileRef
+         location = "group:Concatenate.playground">
+      </FileRef>
+      <FileRef
+         location = "group:Contains.playground">
+      </FileRef>
+      <FileRef
+         location = "group:ContainsWhere.playground">
+      </FileRef>
+      <FileRef
+         location = "group:Count.playground">
+      </FileRef>
+      <FileRef
+         location = "group:Debounce.playground">
+      </FileRef>
+      <FileRef
+         location = "group:Delay.playground">
+      </FileRef>
+      <FileRef
+         location = "group:Drop.playground">
+      </FileRef>
+      <FileRef
+         location = "group:DropUntilOutput.playground">
+      </FileRef>
+      <FileRef
+         location = "group:DropWhile.playground">
+      </FileRef>
+      <FileRef
+         location = "group:Filter.playground">
+      </FileRef>
+      <FileRef
+         location = "group:First.playground">
+      </FileRef>
+      <FileRef
+         location = "group:FirstWhere.playground">
+      </FileRef>
+      <FileRef
+         location = "group:FlatMap.playground">
+      </FileRef>
+      <FileRef
+         location = "group:HandleEvents.playground">
+      </FileRef>
+      <FileRef
+         location = "group:IgnoreOutput.playground">
+      </FileRef>
+      <FileRef
+         location = "group:Last.playground">
+      </FileRef>
+      <FileRef
+         location = "group:LastWhere.playground">
+      </FileRef>
+      <FileRef
+         location = "group:MakeConnectable.playground">
+      </FileRef>
+      <FileRef
+         location = "group:Map.playground">
+      </FileRef>
+      <FileRef
+         location = "group:Merge.playground">
+      </FileRef>
+      <FileRef
+         location = "group:Multicast.playground">
+      </FileRef>
+      <FileRef
+         location = "group:ReceiveOn.playground">
+      </FileRef>
+      <FileRef
+         location = "group:RemoveDuplicates.playground">
+      </FileRef>
+      <FileRef
+         location = "group:Reduce.playground">
+      </FileRef>
+      <FileRef
+         location = "group:Scan.playground">
+      </FileRef>
+      <FileRef
+         location = "group:Share.playground">
+      </FileRef>
+      <FileRef
+         location = "group:SubscribeOn.playground">
+      </FileRef>
+      <FileRef
+         location = "group:SwitchToLatest.playground">
+      </FileRef>
+      <FileRef
+         location = "group:Timeout.playground">
+      </FileRef>
+      <FileRef
+         location = "group:Throttle.playground">
+      </FileRef>
+      <FileRef
+         location = "group:TryCatch.playground">
+      </FileRef>
+      <FileRef
+         location = "group:Zip.playground">
+      </FileRef>
+   </Group>
+   <Group
+      location = "group:Examples"
+      name = "Examples">
+      <FileRef
+         location = "group:UITextField.playground">
+      </FileRef>
+      <FileRef
+         location = "group:DeviceOrientation.playground">
+      </FileRef>
+      <FileRef
+         location = "group:NetworkRequestOnUITextField.playground">
+      </FileRef>
+      <FileRef
+         location = "group:Key-ValueObserving.playground">
+      </FileRef>
+      <FileRef
+         location = "group:Timer.playground">
+      </FileRef>
+      <FileRef
+         location = "group:CredentialsValidation.playground">
+      </FileRef>
+      <FileRef
+         location = "group:NotificationPermission.playground">
+      </FileRef>
+      <FileRef
+         location = "group:URLSessionRequest.playground">
+      </FileRef>
+      <FileRef
+         location = "group:TwoURLSessionRequests.playground">
+      </FileRef>
+   </Group>
+</Workspace>
